@@ -26,6 +26,7 @@ public class ShatellStart : MonoBehaviour {
     public GameObject _ISS_Oculus_Camera;
     public GameObject _Main_Work_Space;
     public GameObject Pult_Upravlenie;
+    public GameObject CameraPivot;
 
     public GameObject Fire_Smoke_GameObject;
 
@@ -35,11 +36,13 @@ public class ShatellStart : MonoBehaviour {
     public GameObject _Sound_4;
     public GameObject _Sound_5;
     public GameObject _Sound_6;
+    public TextMesh PressKey;
 
     private bool oneTimeAddForce        = false;
     private bool animationOneTime       = false;
     private bool change_Camera_in_space = false;
     private bool CountDown = false;
+    private bool showFlyEndPositionOneTime = false;
 
 
 	void Update () 
@@ -65,15 +68,25 @@ public class ShatellStart : MonoBehaviour {
             Destroy(_Part_OF_Land_);
 
             _Sound_6.gameObject.SetActive(true);
-            _ISS_complete_2011.transform.position = gameObject.transform.position;
+
+            if (showFlyEndPositionOneTime == false)
+            {
+                OculusRift_GameObject.transform.position = CameraPivot.transform.position;
+                showFlyEndPositionOneTime = true;
+            }
+            //_ISS_complete_2011.transform.position = gameObject.transform.position;
+            PressKey.gameObject.SetActive(true);
+
+            
 
             //After Out Earth Position 12742KM we destroy Rocket
             if (change_Camera_in_space == false)
             {
                 //OculusRift_GameObject.gameObject.SetActive(false);
-                OculusRift_GameObject.transform.position = _Main_Work_Space.transform.position;
-                OculusRift_GameObject.gameObject.SetActive(true);
-                change_Camera_in_space = true;
+                
+                //OculusRift_GameObject.transform.position = _Main_Work_Space.transform.position;
+                //OculusRift_GameObject.gameObject.SetActive(true);
+                //change_Camera_in_space = true;
             }
             
             /*OculusRift_GameObject.GetComponent<OVRGamepadController>().active = true;
