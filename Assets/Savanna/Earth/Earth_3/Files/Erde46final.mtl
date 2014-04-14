@@ -1,0 +1,48 @@
+# Blender MTL File: 'Erde46final.blend'
+# Material Count: 4
+newmtl Clouds
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd C:\\0Zips\\Blender²\\Textures\\Clouds.png
+map_d C:\\0Zips\\Blender²\\Textures\\Clouds.png
+
+
+newmtl ErdeTag
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\\0Zips\\Blender²\\Textures\\Color Map(ErdeTagFarbig).jpg
+map_Ks C:\\0Zips\\Blender²\\Textures\\Spec Mask.png
+map_Bump C:\\0Zips\\Blender²\\Textures\\Bump.jpg
+
+
+newmtl Material
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.001595 0.236292 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.756000
+illum 1
+
+
+newmtl Material.001
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\\Blender²\\Textures\\Moonsurf.jpg
+
+
